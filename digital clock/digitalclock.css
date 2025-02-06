@@ -1,0 +1,65 @@
+body{
+    margin: 0;/*to remove default margine*/
+    font-family:sans-serif;/*to change font family*/
+   display: flex; /*to bring everything horizontally at center*/
+    flex-direction:column;
+    align-items: center;/*to align items at center*/
+    /*to bring content vertically at center*/
+    height: 100vh;/*we used 100% of the screen */
+    justify-content: center;/*to bring all content vertically at center*/
+    background: url("https://images.unsplash.com/photo-1484542603127-984f4f7d14cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1930&q=80");
+    background-size: cover;/* very important to fix whole image in screen*/
+    overflow: hidden;
+}
+h2{
+    text-transform: uppercase ;/*to transform all letters in h2 in capitasl*/
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;/*to align text*/
+    color:rgb(19, 19, 19);
+}   
+/*to install clock class in css*/
+.clock{
+    display: flex;/*to display all info in clock side by side ie bagal bagal me*/
+}
+/*now we are targettiong all div in clock*/
+.clock div{
+  margin:3px;/*to seperate all content in a line */
+    position:relative;
+}
+/*now we are targetting span in id in html*/
+.clock span {
+    width: 100px;
+    height: 80px;
+    background: rgb(4, 89, 123);
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid white; /* Add outer border */
+    box-sizing: border-box; 
+}
+/*now we are targetting span in text ie hours,minutes,seconds  in html*/
+.clock .text{
+    height: 30px;/*height of darkblue box*/
+    font-size: 10px;/*fint size of text*/
+    text-transform:uppercase;
+    letter-spacing: 2px ;
+    background: rgb(1, 47, 70);/*to colour box*/
+    opacity: 0.8;
+}
+.clock #ampm{
+    bottom:0;
+    position:absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(8, 1, 1);
+    background: rgb(255, 255, 255);
+    opacity:80;
+}
+/*json means javascript object notation
+

@@ -1,0 +1,331 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 0px; /* Add top margin to h2 element */
+}
+
+.panel {
+  width: 100%;
+  min-height: 86vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product1 {
+
+  width: 24%;
+  height: 800px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  background-color: #7cbbac;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.product2 {
+
+  width: 24%;
+  height: 800px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  background-color: #0c7eae;
+  
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.product3 {
+
+  width: 24%;
+  height: 800px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  background-color: #f5630fe7;
+
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+
+.panel {
+  height: 30px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  background: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 50px; /* Add top margin to the image */
+  margin-bottom: 60px; /* Add bottom margin to the image */
+}
+
+.pricing_haeder1 {
+  
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: start;
+  border-radius: 0px;
+  padding: 40px;
+  background: #2b7968;
+  color: rgb(4, 3, 3);
+  align-items: center;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+
+}
+.pricing_haeder2 {
+  
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: start;
+  border-radius: 0px;
+  padding: 40px;
+  background: #064b7c;
+  color: rgb(4, 3, 3);
+  align-items: center;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+
+}
+.pricing_haeder3 {
+  
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  border-radius: 0px;
+  padding: 40px;
+  background:#9a3b04fc;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+
+  
+}
+.product-title{
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: 100px;
+ align-items: center;
+  color: white;
+
+}
+
+.product-description {
+  margin-top: 12px;
+  font-size: 80px ;
+  font-weight:bolder;
+  text-align: center;
+  color: white;
+}
+.inner-box {
+  width: 90%;
+  height: 530px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Rest of the CSS styles as provided in your code */
+
+/* Add styles for the feature list items */
+
+.top {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+.inner-box li {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  text-decoration: underline;
+  
+}
+.inner-box2 li {
+  
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+.inner-box3 li {
+  
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+.inner-box .hover-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hover-button button {
+  padding: 10px 20px;
+  background-color: #276d5e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium';
+  cursor: pointer;
+  height:70px;
+  width:250px;
+  transition: background-color 0.3s ease;
+}
+.hover-button button:hover {
+  background-color: #a1d2c7; /* Change to the desired lighter color */
+}
+.inner-box2 .hover-button2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.hover-button2 button {
+  padding: 10px 20px;
+  background-color: #064b7c;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium';
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  height:70px;
+  width:250px;
+  transition: background-color 0.3s ease;
+}
+.hover-button2 button:hover {
+  background-color: rgb(97, 183, 219); /* Change to the desired lighter color */
+}
+
+.hover-button3 button {
+  padding: 10px 20px;
+  background-color: #9a3b04fc;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium';
+  cursor: pointer;
+  height:70px;
+  width:250px;
+  transition: background-color 0.3s ease;
+}
+.inner-box3 .hover-button3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.hover-button3 button:hover {
+  background-color: #f38749e7; /* Change to the desired lighter color */
+}
+
+
+.inner-box2 {
+  width: 90%;
+  height: 530px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.inner-box3 {
+  width: 90%;
+  height: 530px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+ 
+}
+.top {
+  text-align: center;
+  background-color: #000000; /* Add the desired background color for the upper margin */
+  padding: 10px; /* Add padding to the upper margin */
+  color: #ffffff; /* Text color for the upper margin */
+  font-size: 20px; /* Font size for the text in the upper margin */
+  letter-spacing: 2px; /* Letter spacing for the text in the upper margin */
+}
+.time{
+  text-align:center;
+}
+
+.search-container input[type="text"] {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+width: 250px;
+}
+
+/* Style the search button */
+.search-container button[type="submit"] {
+background-color: #f543ba;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 3px;
+cursor: pointer;
+font-size: 16px;
+margin-left: 10px;
+}
+
+/* On hover, change the background color of the search button */
+.search-container button[type="submit"]:hover {
+background-color:#f543ba;
+}
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+
+.social-media li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+
+
