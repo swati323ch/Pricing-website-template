@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Art</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+         
+        body {
+            background-color: rgb(252, 229, 229);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column; 
+        }
+        .backgroundChange{
+            background-color: black;
+        }
+        .container {
+            max-width: 1000px;
+            background-color: rgb(245, 241, 241);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px; 
+            color: blue;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        
+        img {
+            max-width: 90%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 30px;
+        }
+        .mainImg{
+            transition: all 1000ms ease-in-out;
+            width:auto;
+        }
+        .mainImg:hover{
+            transform:scale(1.15) rotate(180deg) ;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding:20px;
+        }
+        .grid img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            object-position: center;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 15px 20px;
+            padding: 0;
+            font-size: 1.2em;
+        }
+        li {
+            color: #666;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color:rgb(77, 11, 152);
+            color: white;
+            border: none;
+            border-radius: 50px;
+           
+            margin-top: 10px; 
+            width: 380px;
+            height:90px;
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+            
+        }
+        button:hover {
+            background-color: rgb(164, 81, 241);
+            transition: 1s;
+            
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .endButton {
+            background-color:rgb(77, 11, 152);
+            
+            width:850px;
+            height: 100px;
+            border-radius: 20px;
+            font-size: 40px;
+           
+        }
+        .endButton:hover {
+            background-color: white;
+            color:rgb(77, 11, 152);
+            border:3px solid rgb(77, 11, 152);
+        }
+        
+        .para{
+            font-size: 1.6em;
+            line-height: 1.6;
+            margin-bottom: 1.5em;
+        }
+        h1{
+            font-size: 80px;
+            color:rgb(64, 1, 135);
+            background: linear-gradient(180deg, rgb(247, 247, 247) 23.8%, rgb(255, 203, 203) 92%);
+            border-radius: 10px;
+            padding:15px;
+        }
+        h2{
+            font-size: 40px;
+            color:rgb(99, 62, 244);
+            font-weight:bolder;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        a{
+            color:rgb(77, 11, 152);
+            font-weight: bolder;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        footer{
+            text-align: center;
+            margin-top: 25px;
+            color: #7b7878;
+            font-weight: bold;
+            font-family:monospace;
+            font-size: 30px;
+        }
+        .dark{
+            background-color: black;
+        }
+        .dark .container{
+          background-color:#413d3dd8;
+        }
+        .dark h1{
+            color:white;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+        }
+        .dark h2{
+            color:white;
+        }
+        .dark p{
+            color:white;
+        }
+        .dark li {
+            font-size: 1em;
+            color: white;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .dark a{
+            color:white;
+        }
+        .dark footer{
+            color:white;
+        }
+        .dark button{
+            background-color:#2a2828;
+        }
+        .dark button:hover{
+            background-color: rgb(77, 11, 152);
+            
+        }
+        .dark .endButton{
+            background-color:rgb(77, 11, 152);
+        }
+        .dark .endButton:hover{
+            background-color:white;
+            color:rgb(77, 11, 152);
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <button class = "startButton">Change Theme</button>
+    <div class="container">
+        <h1>Mandala Art Work</h1>
+        <h2>My Favourite Pastime</h2>
+       <div class = "mainImg">
+         <img src="https://5.imimg.com/data5/RH/OE/LS/SELLER-5077462/large-indian-hippie-bohemian-psychedelic-peacock-mandala-wall-hanging-floral-gold-bedding-tapestry-1000x1000.jpg" alt="Mandala Art 1">
+       </div>
+        <div class="grid">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-4b48f636475ef5fda4a1c281866ec35e-lq" alt="Mandala Art 3">
+            <img src="https://i.etsystatic.com/29759600/r/il/79ce3b/3889062884/il_fullxfull.3889062884_3q9p.jpg" alt="Mandala Art 2">
+            <img src="https://m.media-amazon.com/images/I/61i3iOuJERL._SY679_.jpg" alt="Mandala Art 5">
+            <img src="https://cdn.vibecity.in/providers/630490fcad2819001186812f/IMG20221020184827_20099744-4f7e-479d-a41e-d69a7eddfa70-3X.webp">
+        </div>
+        <div class = "para">
+            <p>In the ancient Sanskrit language, mandala means “circle.” It is a geometric design that represents the cosmos or deities in various heavenly worlds. “It's all about finding peace in the symmetry of the design and of the universe."</p>
+        <p>How to draw your own mandala:</p>
+        <ul>
+            <li>The first step for any mandala is to make a grid as we want it to be symmetrical and we want all of the patterns to be equal.</li>
+            <li>Then decide what basic shapes you want to radiate from that circle, like an inverted U or V.</li>
+            <li>The next layer should be slightly different. You might change the shape a little, fill it in with different strokes or colors.</li>
+        </ul>
+        <a href="https://en.wikipedia.org/wiki/Mandala">Read on Wikipedia</a>
+        <div class="button-container">
+            <button class ="endButton">GET IN TOUCH FOR A PRIVATE CLASS</button>
+        </div>
+        
+        <footer>Coded by Ch Swati</footer>
+        </div>
+    </div>
+    <script>
+        function askQuestion(){
+            let a = prompt("Do you know about Mandala Art");
+            let c = prompt("What is your Name");
+            let d = prompt("Please provide your Email address");
+            alert(`Thanks ${c}!  We'll be in touch soon with more details for the classes . Feel free to contact us if you have any questionsat abcd@gmail.com`);
+        }
+        function changeTheme() {
+            let body = document.querySelector("body");
+            if(body.classList.contains("dark")){
+                body.classList.remove("dark");
+            }
+            else{
+                body.classList.add("dark");
+            }
+           
+        }
+
+        let changecolor = document.querySelector(".startButton");
+        changecolor.addEventListener("click", changeTheme);
+
+        let promptquestion = document.querySelector(".endButton");
+        promptquestion.addEventListener("click",askQuestion);
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to India</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            overflow: hidden;
+        }
+
+        body {
+            background: linear-gradient(to bottom, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 1500px;
+            max-height: 95%; 
+            width: 100%;
+            text-align: center;
+            overflow-y: auto; 
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 0.5em;
+            color: #008cc8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #ef6b18;
+        }
+
+        img {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            margin: 1.5em 0;
+            transition: transform 0.3s ease-in-out;
+            max-width: 65%;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 1.6em;
+            line-height: 1.6;
+            margin-bottom: 1.5em;
+        }
+
+        a {
+            font-size: 2em;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff6f61;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #ff6f61;
+            margin: 1.5em 0;
+
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 7px;
+            font-size: 1.2em;
+            cursor: pointer;
+            font-size: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff8c42;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Having A Travel Plan?</h1>
+        <h2>India would be the best place for you!!</h2>
+        <hr>
+        <img src="https://www.blsinternational.com/blog/wp-content/uploads/2024/02/The-Big-Wave-of-Tourism-in-India-20-Feb-24.jpeg" alt="Incredible India">
+        <hr>
+        <span>
+        <p>
+            India boasts a rich heritage and myriad attractions, making it one of the most popular tourist destinations in the world. The diversity in its landforms, from the majestic Himalayas to the serene beaches of Goa, makes it a perfect destination for people all over the globe. It is an ideal spot for you to explore diverse cultural heritages with captivating tourist spots spread across the country. If you love spices and variety in food, India is the ultimate destination for you with its various cuisines. Immerse yourself in the flavors of India and experience its warm hospitality.<br> 
+            Come join us for an unforgettable travel experience. <strong>Incredible India!!</strong>
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Tourism_in_India">Read more about tourism in India</a>
+        <br><br>
+        <button>BOOK YOUR TICKETS HERE</button>
+    </span>
+    </div>
+<script>
+    function details(){
+        let name = prompt("Please Enter your Name :");
+        let age = prompt("Enter your Age:");
+        
+        if (18 <= age) {
+            let question = confirm("Do you want to book tickets?");
+            if (question) {
+                alert("We will soon let you know about the slot booking");
+            } else {
+                alert("You chose not to book tickets.");
+            }
+        }
+        else{
+            alert("You are not eligible to travell !!");
+        }
+
+
+    }
+    let a = document.querySelector("button");
+    a.addEventListener("click",details);
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <i id="icon1" onclick="change('icon1')" class="fa fa-cloud-sun" aria hidden="true" style = "color: #ff9900;font-size: 3rem;display: block;margin: 0 auto; display: flex; justify-content: center; align-items: center;" ></i>
+    <h1>Currently 21 &deg; in Tokyo </h1>
+    <div id="max-min">
+        13&deg; /
+        <strong>23&deg;</strong> 
+    </div>
+    
+    <div class="style1">
+        <i class="fa fa-cloud-showers-heavy"></i>
+        <strong>Tomorrow</strong>
+        <p class="style2">10 &deg / 22 &deg</p>
+    </div>
+    <div class="style1">
+        <i class="fa fa-cloud"></i>
+        <strong>Saturday</strong>
+        <p class="style2">15 &deg / 17 &deg</p>
+    </div>
+    <div class="style1">
+        <i class="fa fa-sun-o fa-sun"></i>
+        <strong>Sunday</strong>
+        <p class="style2">25 &deg / 28 &deg</p>
+    </div>
+   
+    <button>
+        Change City
+    </button>
+    <p class="style3">Code by Ch Swati</p>
+    
+</body>
+<style>
+    .fa-cloud-sun {
+        color: #1A64D6;
+        font-size: 3rem;
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1A64D6;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #max-min {
+        text-align: center;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 50px;
+    }
+    .style1 {
+        text-align: center;
+        font-size: 25px;
+        padding: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px;
+        margin: 0 auto; 
+        width: 400px;
+        transition: background-color 150ms linear;
+    }
+    .style1:hover {
+        background-color: #FFFBEF;
+    }
+    .style2 {
+        font-family: monospace;
+        color: #4c4b47c3;
+        margin-left: 20px;
+    }
+    button {
+        color: #FFFFFF;
+        background-color: #1A64D6;
+        border-color: #1A64D6;
+        display: block;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 25px 35px;
+        font-size: 23px;
+        border-radius: 50px;
+        transition: all 150ms linear;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    }
+    button:hover {
+        background-color: #FFFFFF;
+        color: #1A64D6;
+    }
+    .style3 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 50px;
+        font-family: monospace;
+        color: #4c4b47b8;
+    }
+</style>
+<script>
+    function headingChange(city,temperature){
+        let h = document.querySelector("h1");
+        h.innerHTML = "Currently "+temperature + "&degC in " + city;
+        let i = document.getElementById("icon1");
+        
+        if(temperature<=10){
+            i.className = "far fa-sad-tear";
+        }
+        else if(temperature >10 && temperature<=30){
+            i.className = "fa fa-smile";
+        }
+        else if(temperature>=31){
+            i.className = "far fa-sad-tear";
+        }
+
+    }
+    function details(){
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        headingChange(city,temperature);
+    }
+    let changecity = document.querySelector("button");
+    changecity.addEventListener("click",details); 
+</script>
+</html>
